@@ -9,7 +9,7 @@ class HiloDormilon extends Thread {
     public void run() {
         try{
             System.out.println("Uyyyy que sueeñoo me voy a dormir...");
-            Thread.sleep(30000); // duerme este mismo hilo
+            Thread.sleep(30000);
             System.out.println("Zzzzzzzzz");
         }catch (InterruptedException e){
             System.out.println("¡Uy va!, me han despertado");
@@ -31,7 +31,6 @@ public class Main {
             System.out.println("Estado del hilo: " + dormilon.getState());  //RUNNABLE
 
             //3. HILO DUERME
-            System.out.println("Durmiendo hilo");
             Thread.sleep(2000); //<--¡CUIDADO! No confundir con dormilon.sleep(2000);
             System.out.println("Estado del hilo: " + dormilon.getState());  //TIME_WAITING
 
